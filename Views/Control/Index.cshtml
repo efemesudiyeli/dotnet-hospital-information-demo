@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Kontrol Panel";
+}
+@using hospitalinformationsystem.Models;
+@model List<PatientInfoModel>;
+
+<div class="text-center">
+    <h1 class="display-4">Kontrol Paneli.</h1>
+    <p>Daha fazla bilgi için <a target="_blank" href="https://github.com/efemesudiyeli/hospitalinformationsystem">adresinizi ziyaret ediniz.</a>.</p>
+</div>
+
+<ul>
+@foreach (var patient in Model)
+{  
+    
+    <li>@patient.patientName @patient.patientSurname</li>
+    
+    
+    
+}
+
+
+</ul>
+
+
+
