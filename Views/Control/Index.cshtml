@@ -4,23 +4,68 @@
 @using hospitalinformationsystem.Models;
 @model List<PatientInfoModel>;
 
+
 <div class="text-center">
     <h1 class="display-4">Kontrol Paneli.</h1>
-    <p>Daha fazla bilgi için <a target="_blank" href="https://github.com/efemesudiyeli/hospitalinformationsystem">adresinizi ziyaret ediniz.</a>.</p>
+    <p>Daha fazla bilgi için <a target="_blank"
+            href="https://github.com/efemesudiyeli/hospitalinformationsystem">adresini ziyaret ediniz.</a>.</p>
 </div>
 
-<ul>
-@foreach (var patient in Model)
-{  
-    
-    <li>@patient.patientName @patient.patientSurname</li>
-    
-    
-    
-}
+
+<div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Hasta No</th>
+                <th scope="col">Tarih</th>
+                <th scope="col">Ekleyen</th>
+                <th scope="col">Hasta Adı</th>
+                <th scope="col">Hasta Soyadı</th>
+                <th scope="col">Doğum Tarihi</th>
+                <th scope="col">Doğum Şekli</th>
+                <th scope="col">Kan Grubu</th>
+                <th scope="col">Boy</th>
+                <th scope="col">Kilo</th>
+                <th scope="col">Baba Kan Grubu</th>
+                <th scope="col">Anne Kan Grubu</th>
+                <th scope="col">Anne Adı</th>
+                <th scope="col">Baba Adı</th>
+                <th scope="col"> Aksiyon </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var patient in Model)
+            {
+                <tr>
+                    <th scope="row">@patient.id</th>
+                    <td>@patient.patientNo</td>
+                    <td>@patient.date</td>
+                    <td>Dr. @patient.InsertedBy</td>
+                    <td>@patient.patientName</td>
+                    <td>@patient.patientSurname</td>
+                    <td>@patient.birthDate</td>
+                    <td>@patient.birthType</td>
+                    <td>@patient.bloodType</td>
+                    <td>@patient.patientHeight<i>cm</i></td>
+                    <td>@patient.patientWeight<i>kg</i></td>
+                    <td>@patient.fatherBloodType</td>
+                    <td>@patient.motherBloodType</td>
+                    <td>@patient.patientMotherName</td>
+                    <td>@patient.patientFatherName</td>
+                    <td>
+
+                        <a href="" class="btn btn-primary">Edit</a>
+                        <a href="" class="btn btn-danger">Delete</a>
 
 
-</ul>
+                    </td>
 
+                </tr>
+            }
 
-
+        </tbody>
+    </table>
+    <a href="" class="btn btn-primary">Hasta Kaydı Ekle</a>
+</div>
