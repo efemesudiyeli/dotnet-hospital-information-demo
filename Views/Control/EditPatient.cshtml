@@ -1,0 +1,61 @@
+@{
+    ViewData["Title"] = "Kontrol Panel";
+}
+@using hospitalinformationsystem.Models;
+@model hospitalinformationsystem.Models.PatientInfoModel
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Hasta Ekle.</h1>
+    <p>Daha fazla bilgi için <a target="_blank"
+            href="https://github.com/efemesudiyeli/hospitalinformationsystem">adresini ziyaret ediniz.</a>.</p>
+</div>
+
+
+<h2>Hasta Bilgilerini Güncelle</h2>
+<form class="form-group" method="post">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Hasta No</th>
+                <th scope="col">Tarih</th>
+                <th scope="col">Ekleyen</th>
+                <th scope="col">Hasta Adı</th>
+                <th scope="col">Hasta Soyadı</th>
+                <th scope="col">Doğum Tarihi</th>
+                <th scope="col">Doğum Şekli</th>
+                <th scope="col">Kan Grubu</th>
+                <th scope="col">Boy</th>
+                <th scope="col">Kilo</th>
+                <th scope="col">Baba Kan Grubu</th>
+                <th scope="col">Anne Kan Grubu</th>
+                <th scope="col">Anne Adı</th>
+                <th scope="col">Baba Adı</th>
+             
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th> @Html.TextBoxFor(x=>x.id, new {@class = "form-control", @disabled = "disabled"}  )</th>
+                <td> @Html.TextBoxFor(x=>x.patientNo, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.date, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.InsertedBy, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.patientName, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.patientSurname, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.birthDate, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.birthType, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.bloodType, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.patientHeight, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.patientWeight, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.fatherBloodType, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.motherBloodType, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.patientMotherName, new {@class = "form-control"} )</td>
+                <td> @Html.TextBoxFor(x=>x.patientFatherName, new {@class = "form-control"} )</td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-success">Onayla</button>
+</form>
+

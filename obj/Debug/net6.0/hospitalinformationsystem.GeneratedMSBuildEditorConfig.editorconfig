@@ -14,6 +14,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\hospitalinformationsystem
 build_property._RazorSourceGeneratorDebug = 
 
+[d:/hospitalinformationsystem/Views/Control/EditPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJvbFxFZGl0UGF0aWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [d:/hospitalinformationsystem/Views/Control/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJvbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

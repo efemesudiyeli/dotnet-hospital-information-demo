@@ -16333,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\hospitalinformationsystem\\Views\\Control\\EditPatient.cshtml",
+      "TargetPath": "Views\\Control\\EditPatient.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\hospitalinformationsystem\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
