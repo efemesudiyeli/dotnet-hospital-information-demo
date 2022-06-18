@@ -16318,6 +16318,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\hospitalinformationsystem\\Views\\Control\\NewPatient.cshtml",
+      "TargetPath": "Views\\Control\\NewPatient.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\hospitalinformationsystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

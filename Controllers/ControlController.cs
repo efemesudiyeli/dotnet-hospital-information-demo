@@ -6,12 +6,7 @@ namespace hospitalinformationsystem.Controllers;
 
 public class ControlController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
 
-    public ControlController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
 
     Context contextdata = new Context();
 
@@ -22,6 +17,28 @@ public class ControlController : Controller
 
         return View(patientInfoDegerler);
     }
+
+    [HttpGet]
+    public IActionResult NewPatient()
+    {
+
+
+        return View();
+
+    }
+
+    [HttpPost]
+    public IActionResult NewPatient(PatientInfoModel p)
+    {
+
+        Console.WriteLine("post");
+        contextdata.patientInfoModels.Add(p);
+        contextdata.SaveChanges();
+
+        return RedirectToAction("Index");
+
+    }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
